@@ -1,0 +1,33 @@
+{
+  "name": "treinamento-softeam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "postest":"mongo delete",
+    "start": "cross-env NODE_ENV=test nodemon index.js",
+    "dev": "nodemon index.js --ignore __tests__"
+  },
+  "author": "Rivanildo",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "celebrate": "^12.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.1.3",
+    "express-slow-down": "^1.3.1",
+    "helmet": "^3.23.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.20",
+    "swagger-ui-express": "^4.1.4"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "jest": "^26.4.0",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
+  }
+}
